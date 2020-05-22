@@ -1,0 +1,5 @@
+* Readme
+  See [[file:./texlive.profile]] for installation details.
+
+  It contains most of the packages (~3k/4k) but only supports English and has no
+  extra fonts.
