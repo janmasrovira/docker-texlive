@@ -16,6 +16,10 @@ RUN cd /home && \
     rm -rf /usr/local/texlive/2020/texmf-dist/source && \
     /bin/true
 
+RUN apk add --no-cache python3 && \
+  pip3 install pygments && \
+  apk del python3
+
 ENV PATH="/usr/local/texlive/2020/bin/x86_64-linuxmusl:${PATH}"
 
 CMD ["sh"]
