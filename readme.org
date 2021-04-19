@@ -1,5 +1,9 @@
 * Readme
-  See [[file:./texlive.profile]] for installation details.
+  Custom image of the texlive distribution. 
 
   It contains most of the packages (~3k/4k) but only supports English and has no
   extra fonts.
+
+  Note that I used the installation script to create all (2020, 2021) images.
+  This script, always installs the latest version of texlive, thus, results may
+  not be reproducible.
