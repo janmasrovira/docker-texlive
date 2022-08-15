@@ -19,6 +19,7 @@ collection-langenglish 1
 collection-latex 1
 collection-latexextra 1
 collection-latexrecommended 1
+collection-luatex 1
 collection-mathscience 1
 collection-pictures 1
 collection-plaingeneric 1
