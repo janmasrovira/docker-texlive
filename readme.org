@@ -8,3 +8,14 @@ Note that it uses the installation script that install the latest version.
 Thus, results may not be reproducible.
 
 *Important:* You need to set the correct year number in the =texlive.profile=.
+** Building locally and pushing
+   #+begin_example
+   cd docker-texlive
+   docker build . --tag test
+   -- run the image (optional)
+   docker run -it --rm --name testrun test
+   -- tag with final name
+   docker tag test janmasrovira/texlive:2023-custom
+   -- push
+   docker push janmasrovira/texlive:2023-custom
+   #+end_example
