@@ -1,6 +1,6 @@
-FROM alpine:3.18.2
+FROM alpine:3.20.2
 
-ARG YEAR=2023
+ARG YEAR=2024
 
 COPY texlive.profile /home/
 
