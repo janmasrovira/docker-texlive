@@ -12,7 +12,7 @@ Thus, results may not be reproducible.
 ** Building locally and pushing
 #+begin_example
 cd docker-texlive
-docker buildx . --tag test
+docker buildx build . --tag test
 -- run the image (optional)
 docker run -it --rm --name testrun test
 -- tag with final name
