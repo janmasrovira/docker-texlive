@@ -1,0 +1,17 @@
+* Readme
+Custom image of the texlive 2025 distribution.
+
+It contains most of the packages (~4k) but only supports English and has no
+extra fonts.
+
+** Building locally and pushing
+#+begin_example
+cd docker-texlive
+docker buildx build . --tag test
+-- run the image (optional)
+docker run -it --rm --name testrun test
+-- tag with final name
+docker tag test janmasrovira/texlive:2025-custom
+-- push
+docker push janmasrovira/texlive:2025-custom
+#+end_example
