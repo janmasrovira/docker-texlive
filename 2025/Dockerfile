@@ -19,10 +19,9 @@ RUN cd /home && \
     rm -rf /usr/local/texlive/$YEAR/texmf-dist/source && \
     /bin/true
 
-RUN apk add --no-cache py3-pip && \
-  pip3 install pygments && \
-  apk del py3-pip
+RUN apk add --no-cache py3-pygments
 
 ENV PATH="/usr/local/texlive/$YEAR/bin/x86_64-linuxmusl:${PATH}"
+
 
 CMD ["sh"]
