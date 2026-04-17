@@ -1,8 +1,9 @@
 * Readme
 Custom image of the texlive 2026 distribution.
 
-It contains most of the packages (~4k) but only supports English and has no
-extra fonts.
+It contains most of the packages (~4k) but only supports English. The
+=collection-fontsrecommended= set is included; no other extra fonts are
+installed.
 
 ** Building locally and pushing
 #+begin_example
